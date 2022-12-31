@@ -17,10 +17,7 @@
 }
 #pasword,#login{
     background-color: gray;
-}
-#login{
-    float: left;
-}
-#pasword{
-
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
