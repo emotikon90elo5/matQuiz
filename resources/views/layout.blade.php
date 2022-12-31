@@ -9,8 +9,7 @@
 </head>
 <body>
     <nav>
-
-        <div class="nav">
+        <div class="logo">
             <a href="/">
                 <img id="img" src="{{asset('logo.svg')}}" alt="no img">
             </a>
@@ -27,7 +26,7 @@
         </div>
         <div class="nav">
             <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
+                <button class="dropbtn">strony</button>
                 <div class="dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
