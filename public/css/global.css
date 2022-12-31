@@ -36,6 +36,10 @@ body{
     float: left;
 
 }
+tr,table,td{
+  border: 1px solid black;
+  background-color: yellow;
+}
 
 .dropbtn {
     background-color: transparent;
