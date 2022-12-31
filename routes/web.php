@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('main');
 });
 
+Route::get('/login', function () {
+    return view('login');
+});
+
 Route::get('/{id}', function ($id) {
     return view('hi', [
         "id" => $id

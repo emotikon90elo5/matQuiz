@@ -1,0 +1,26 @@
+#loginbox,#logininnerbox{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    align-content: center;
+}
+#loginbox{
+    height: 85vh;
+    width: 80vh;
+    background-color: rgb(180, 180, 180);
+
+}
+#logininnerbox{
+    height: 95%;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#pasword,#login{
+    background-color: gray;
+}
+#login{
+    float: left;
+}
+#pasword{
+
+}
