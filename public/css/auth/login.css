@@ -1,0 +1,67 @@
+#loginbox,#logininnerbox{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    align-content: center;
+    position: relative;
+}
+#loginbox{
+    top: 5vh;
+    height: 75vh;
+    width: 60vh;
+    background-color: rgb(180, 180, 180);
+
+}
+#logininnerbox{
+    top: 2.5%;
+    height: 95%;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#passwordinpu,#logininpu{
+    background-color: gray;
+    position: relative;
+    height: 10%;
+    width: 60%;
+    top: 8%;
+    left: 20%;
+}
+#passwordinpu{
+    margin-top: 20px;
+}
+.input{
+    color: white;
+    position: relative;
+    left: 5%;
+    top: 8%;
+}
+.buttons{
+    position: relative;
+    width: 90%;
+    height: 40%;
+    left: 5%;
+    top: 20%;
+    background-color: transparent;
+    
+}
+#loginbut,#registrbut,#paswordresetbut{
+    float: left;
+    position: relative;
+    width: 30%;
+    height: 30%;
+    border-width: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+#loginbut,#registrbut{
+    top: 10%;
+    margin-left: 13.5%;
+}
+#paswordresetbut{
+    top: 20%;
+    margin-left: 35%;
+}
+#loginbut:hover,#registrbut:hover,#paswordresetbut:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
