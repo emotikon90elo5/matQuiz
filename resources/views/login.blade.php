@@ -2,7 +2,7 @@
 
 @section("content")
 
-<link rel="stylesheet" href="{{asset('css/login.css')}}">
+<link rel="stylesheet" href="{{asset('css/auth/login.css')}}">
 
 <div id="loginbox">
 
@@ -29,7 +29,7 @@
         </div>
 
     </div>
-    
+
 </div>
 
 @endsection

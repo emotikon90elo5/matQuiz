@@ -1,0 +1,13 @@
+#registerbox,#registerinnerbox{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    align-content: center;
+    position: relative;
+}
+#registerbox{
+    top: 5vh;
+    height: 75vh;
+    width: 60vh;
+    background-color: rgb(180, 180, 180);
+}
