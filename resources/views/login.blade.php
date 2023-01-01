@@ -12,6 +12,12 @@
             <div class="input">
                 <input type="text" id="login" name="login" value="">
                 <label for="login"> login </label>
+                <div class="error">
+                    <p id="errorlogin">
+                        @error('record')
+                        @enderror
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -19,6 +25,12 @@
             <div class="input">
                 <input type="password" id="password" name="pasword" value="">
                 <label for="password"> password </label>
+                <div class="error">
+                    <p id="errorpassword">
+                        @error('record')
+                        @enderror
+                    </p>
+                </div>
             </div>
         </div>
 

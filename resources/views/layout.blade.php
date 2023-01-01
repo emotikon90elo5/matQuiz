@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/global.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     @yield("head")
 </head>
 <body>
@@ -26,9 +29,9 @@
         </div>
         <div class="nav">
             <div class="dropdown">
-                <button class="dropbtn">strony</button>
+                <button class="dropbtn">sites</button>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
+                    <a href="#">about us</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
                 </div>
@@ -47,12 +50,12 @@
         <div class="nav">
             <div class="dropdown">
                 <button class="dropbtn">Dropdown</button>
-                <div class="dropdown-content">
+            <div class="dropdown-content">
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
-                </div>
             </div>
+        </div>
         </div>
         <div>
             <div class="socialbg">

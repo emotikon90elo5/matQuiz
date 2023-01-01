@@ -1,73 +1,86 @@
 @extends("layout")
-
-@section("content")
+@section("head")
 
 <link rel="stylesheet" href="{{asset('css/auth/register.css')}}">
+@endsection
+@section("content")
 
-<div id="registerbox">
-    <div id="registerinnerbox">
-        <div id="emailinpu">
-            <div class="input">
-                <input type="text" id="email" name="email" value="">
-                <label for="e-mail"> E-mail </label>
-                <div class="error">
-                    <p id="erroremail">error</p>
+<form action="/users" method="post">
+    <div id="registerbox">
+        <div id="registerinnerbox">
+            <div id="emailinpu">
+                <div class="input">
+                    <label for="e-mail"> E-mail </label>
+                    <input type="text" id="email" name="email" value="">
+
+                    @error('email')
+                    <div class="error">
+                        <p id="erroremail">
+
+                            {{$message}}
+
+                        </p>
+                    </div>
+                    @enderror
                 </div>
             </div>
-        </div>
 
-        <div id="logininpu">
-            <div class="input">
-                <input type="text" id="login" name="login" value="">
-                <label for="login"> login </label>
-                <div class="error">
-                    <p id="errorlogin">error</p>
+            <div id="logininpu">
+                <div class="input">
+                    <label for="name"> login </label>
+                    <input type="text" id="name" name="name" value="">
+
+                    @error('name')
+                    <div class="error">
+                        <p id="errorlogin">
+
+                            {{$message}}
+
+                        </p>
+                    </div>
+                    @enderror
                 </div>
             </div>
-        </div>
 
-        <div id="nickinpu">
-            <div class="input">
-                <input type="text" id="nick" name="nick" value="">
-                <label for="nick"> nick </label>
+
+            <div id="passwordinpu">
+                <div class="input">
+                    <label for="password"> password </label>
+                    <input type="password" id="password" name="password" value="">
+
+                </div>
+                @error('password')
                 <div class="error">
-                    <p id="errornick">error</p>
+                    <p id="errorpaswordconfirm">
+                        {{$message}}
+
+                    </p>
+                </div>
+                @enderror
+            </div>
+
+            <div id="passwordConfirm">
+                <div class="input">
+                    <label for="passwordconfirm"> password confirm </label>
+                    <input type="password" id="passwordconfirm" name="password_confirmation" value="">
+
+                    @error('password_confirmation')
+                    <div class="error">
+                        <p id="errorpaswordconfirm">
+
+                            {{$message}}
+
+                        </p>
+                    </div>
+                    @enderror
                 </div>
             </div>
-        </div>
-        <div id="passwordinpu">
-            <div class="input">
-                <input type="password" id="password" name="pasword" value="">
-                <label for="password"> password </label>
-                <div id="paswordhelp">
-                    <button id="help">
-                        <div class="helpbutton">&quest;</div>
-                        <div id="helpdropdown">
-                            pasword has to be at least 8 characters long
-                        </div>
-                    </button>
-                </div>
-                <div class="error">
-                    <p id="errorpassword">error</p>
-                </div>
+            <div id="but">
+                <input id="registerbut" type="submit">
             </div>
-        </div>
-
-        <div id="passwordConfirm">
-            <div class="input">
-                <input type="password" id="passwordconfirm" name="paswordconfirm" value="">
-                <label for="passwordconfirm"> password confirm </label>
-
-                <div class="error">
-                    <p id="errorpaswordconfirm">error</p>
-                </div>
-            </div>
-        </div>
-        <div id="but">
-            <button id=registerbut></button>
         </div>
     </div>
-</div>
+</form>
 
 
 @endsection
