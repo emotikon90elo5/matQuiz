@@ -3,6 +3,7 @@
 use App\Models\Questions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserControler;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,7 +49,5 @@ Route::get('/questions', function () {
 });
 
 
-Route::get('/find', function (Request $request) {
-    dd($request->name);
-
-});
+Route::get('/register', [UserControler::class,"create"]);
+Route::post('/users', [UserControler::class,"store"]);
