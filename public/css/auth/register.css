@@ -103,6 +103,7 @@ input:hover{
     color: rgb(197, 31, 31);
 }
 
+
 #helpdropdown{
     position: relative;
     top:-100%;
@@ -112,7 +113,6 @@ input:hover{
     color: transparent;
     text-align: center;
     border-radius: 10px;
-
 }
 #helpdropdown:hover{
     background-color: rgba(0, 0, 0, 0.5);

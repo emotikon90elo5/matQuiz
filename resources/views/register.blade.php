@@ -41,10 +41,11 @@
                 <input type="password" id="password" name="pasword" value="">
                 <label for="password"> password </label>
                 <div id="paswordhelp">
-                    <button id="help">&quest;</button>
-                    <div id="helpdropdown">
-                        pasword has to be at least 8 characters long
-                    </div>
+                    <button id="help">&quest;
+                        <div id="helpdropdown">
+                            pasword has to be at least 8 characters long
+                        </div>
+                    </button>
                 </div>
                 <div class="error">
                     <p id="errorpassword">error</p>
