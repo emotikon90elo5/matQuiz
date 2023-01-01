@@ -23,3 +23,100 @@
     left: 5%;
     top: 8%;
 }
+#emailinpu,#logininpu,#nickinpu,#passwordinpu,#passwordConfirm{
+    background-color: gray;
+    position: relative;
+    height: 10%;
+    width: 60%;
+    top: 8%;
+    left: 20%;
+    border-radius: 5px;
+}
+#logininpu,#nickinpu,#passwordinpu,#passwordConfirm{
+    margin-top: 20px;
+}
+.error{
+    position: relative;
+    height: 20px;
+    width: 90%;
+    top: -15px;
+    background-color: transparent;
+    color: transparent;
+}
+.error:hover{
+    color: red;
+    background-color: lightcoral;
+}
+#but,#registerbut{
+    position: relative;
+}
+#but{
+    background-color:  transparent;
+    top: 10%;
+    height: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#registerbut{
+    left: 25%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 50%;
+    border-color: transparent;
+    border-radius: 5px;
+}
+#registerbut:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+input{
+    border-color: transparent;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+input:hover{
+    background-color: lightslategray;
+    border: 2px solid black;
+}
+#paswordhelp{
+    float:  right;
+    right: 15%;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+}
+#paswordhelp:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+}
+#help{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-width: 0px;
+    color: rgb(197, 31, 31);
+}
+
+#helpdropdown{
+    position: relative;
+    top:-100%;
+    height: 200%;
+    width: 2000%;
+    background-color: transparent;
+    color: transparent;
+    text-align: center;
+    border-radius: 10px;
+
+}
+#helpdropdown:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    border: 3px solid black;
+}
+

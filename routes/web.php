@@ -49,5 +49,5 @@ Route::get('/questions', function () {
 });
 
 
-Route::get('/register', [UserControler::class,"create"]);
+// Route::get('/register', [UserControler::class,"create"]);
 Route::post('/users', [UserControler::class,"store"]);
