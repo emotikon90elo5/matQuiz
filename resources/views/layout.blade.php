@@ -26,9 +26,9 @@
         </div>
         <div class="nav">
             <div class="dropdown">
-                <button class="dropbtn">strony</button>
+                <button class="dropbtn">sites</button>
                 <div class="dropdown-content">
-                    <a href="#">Link 1</a>
+                    <a href="#">about us</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
                 </div>

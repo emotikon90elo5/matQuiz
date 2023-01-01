@@ -69,8 +69,9 @@
     border-radius: 5px;
 }
 #registerbut:hover{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     cursor: pointer ;
+    box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.2);
 }
 input{
     border-color: transparent;
@@ -81,9 +82,11 @@ input{
 input:hover{
     background-color: rgba(119, 136, 153, 0.25);
     border: 2px solid black;
+    box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.4);
 }
 input:focus{
     outline: none;
     background-color: lightslategray;
     border: 2px solid black;
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.4);
 }
