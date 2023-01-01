@@ -73,7 +73,7 @@
             </div>
         </div>
         <div id="but">
-            <button id=registerbut></button>
+            <button id="registerbut"></button>
         </div>
     </div>
 </div>
