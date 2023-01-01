@@ -35,13 +35,13 @@
                 </div>
             </div>
         </div>
-
         <div id="passwordinpu">
             <div class="input">
                 <input type="password" id="password" name="pasword" value="">
                 <label for="password"> password </label>
                 <div id="paswordhelp">
-                    <button id="help">&quest;
+                    <button id="help">
+                        <div class="helpbutton">&quest;</div>
                         <div id="helpdropdown">
                             pasword has to be at least 8 characters long
                         </div>
