@@ -4,6 +4,7 @@
     border-radius: 5px;
     align-content: center;
     position: relative;
+    font-style: italic;
 }
 #registerbox{
     top: 5vh;
@@ -40,12 +41,13 @@
     height: 20px;
     width: 90%;
     top: -15px;
-    background-color: transparent;
-    color: transparent;
-}
-.error:hover{
     color: red;
     background-color: lightcoral;
+
+}
+.error:hover{
+    background-color: transparent;
+    color: transparent;
 }
 #but,#registerbut{
     position: relative;
@@ -68,55 +70,20 @@
 }
 #registerbut:hover{
     background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer ;
 }
 input{
     border-color: transparent;
     border-radius: 5px;
     background-color: aliceblue;
+    font-style: arial;
 }
 input:hover{
+    background-color: rgba(119, 136, 153, 0.25);
+    border: 2px solid black;
+}
+input:focus{
+    outline: none;
     background-color: lightslategray;
     border: 2px solid black;
 }
-#paswordhelp{
-    float:  right;
-    right: 15%;
-    position: relative;
-    height: 20px;
-    width: 20px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-
-}
-#paswordhelp:hover{
-    background-color: rgba(0, 0, 0, 0.3);
-    color: black;
-}
-#help{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    border-width: 0px;
-    color: rgb(197, 31, 31);
-}
-
-
-#helpdropdown{
-    position: relative;
-    top:-100%;
-    height: 200%;
-    width: 2000%;
-    background-color: transparent;
-    color: transparent;
-    text-align: center;
-    border-radius: 10px;
-}
-#helpdropdown:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: black;
-    border: 3px solid black;
-}
-

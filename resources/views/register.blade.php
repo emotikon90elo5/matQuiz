@@ -11,7 +11,10 @@
                 <input type="text" id="email" name="email" value="">
                 <label for="e-mail"> E-mail </label>
                 <div class="error">
-                    <p id="erroremail">error</p>
+                    <p id="erroremail">
+                        @error('record')
+                        @enderror
+                    </p>
                 </div>
             </div>
         </div>
@@ -21,7 +24,10 @@
                 <input type="text" id="login" name="login" value="">
                 <label for="login"> login </label>
                 <div class="error">
-                    <p id="errorlogin">error</p>
+                    <p id="errorlogin">
+                        @error('record')
+                        @enderror
+                    </p>
                 </div>
             </div>
         </div>
@@ -31,7 +37,11 @@
                 <input type="text" id="nick" name="nick" value="">
                 <label for="nick"> nick </label>
                 <div class="error">
-                    <p id="errornick">error</p>
+
+                    <p id="errornick">
+                        @error('record')
+                        @enderror
+                    </p>
                 </div>
             </div>
         </div>
@@ -40,15 +50,11 @@
             <div class="input">
                 <input type="password" id="password" name="pasword" value="">
                 <label for="password"> password </label>
-                <div id="paswordhelp">
-                    <button id="help">&quest;
-                        <div id="helpdropdown">
-                            pasword has to be at least 8 characters long
-                        </div>
-                    </button>
-                </div>
                 <div class="error">
-                    <p id="errorpassword">error</p>
+                    <p id="errorpassword">
+                        @error('record')
+                        @enderror
+                    </p>
                 </div>
             </div>
         </div>
@@ -59,7 +65,10 @@
                 <label for="passwordconfirm"> password confirm </label>
 
                 <div class="error">
-                    <p id="errorpaswordconfirm">error</p>
+                    <p id="errorpaswordconfirm">
+                        @error('record')
+                        @enderror
+                    </p>
                 </div>
             </div>
         </div>
