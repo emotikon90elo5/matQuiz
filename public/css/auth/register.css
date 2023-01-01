@@ -11,3 +11,9 @@
     width: 60vh;
     background-color: rgb(180, 180, 180);
 }
+#registerinnerbox{
+    top: 2.5%;
+    height: 95%;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
