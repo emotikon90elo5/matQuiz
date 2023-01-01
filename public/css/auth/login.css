@@ -73,6 +73,8 @@ input{
     border-radius: 5px;
     background-color: aliceblue;
     font-style: arial;
+    resize: horizontal;
+    width: 60%;
 }
 input:hover{
     background-color: rgba(119, 136, 153, 0.25);

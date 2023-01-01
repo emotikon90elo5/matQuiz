@@ -23,6 +23,7 @@
     position: relative;
     left: 5%;
     top: 8%;
+
 }
 #emailinpu,#logininpu,#nickinpu,#passwordinpu,#passwordConfirm{
     background-color: gray;
@@ -78,6 +79,8 @@ input{
     border-radius: 5px;
     background-color: aliceblue;
     font-style: arial;
+    resize: horizontal;
+    width: 60%;
 }
 input:hover{
     background-color: rgba(119, 136, 153, 0.25);
