@@ -107,7 +107,7 @@ body{
 }
 .socialbg{/*tło sociali*/
     position: relative;
-    width: 5vw;
+    height: 10vh ;
     float: right;
     align-content: center;
     border-radius: 50%;

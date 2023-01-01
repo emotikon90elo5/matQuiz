@@ -1,31 +1,32 @@
-#loginbox,#logininnerbox{
+#loginbox,#logininnerbox{/*zewnętczny wewnętszny kwadrat*/
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
+    border-radius: 1.5%;
     align-content: center;
     position: relative;
+    min-height: fit-content;
 }
-#loginbox{
+#loginbox{/*zewnętszny kwadrat*/
     top: 5vh;
     height: 75vh;
     width: 60vh;
     background-color: rgb(180, 180, 180);
 
 }
-#logininnerbox{
+#logininnerbox{/*wewnętszny kwadrat*/
     top: 2.5%;
     height: 95%;
     width: 95%;
     background-color: rgba(0, 0, 0, 0.1);
 }
-#passwordinpu,#logininpu{
+#passwordinpu,#logininpu{/*szare kwadraty od inputów*/
     background-color: gray;
     position: relative;
-    height: 10%;
+    min-height: fit-content;
     width: 60%;
     top: 8%;
     left: 20%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 #passwordinpu{
     margin-top: 20px;
@@ -34,7 +35,7 @@
     color: white;
     position: relative;
     left: 5%;
-    top: 8%;
+    padding-top: 5%;
 }
 .buttons{
     position: relative;
@@ -46,6 +47,7 @@
 
 }
 #loginbut,#registrbut,#paswordresetbut{
+    min-width: fit-content;
     float: left;
     position: relative;
     width: 30%;
@@ -54,7 +56,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
+    border-radius: 1.5%;
 }
 #loginbut,#registrbut{
     top: 10%;
@@ -69,8 +71,9 @@
     cursor: pointer ;
 }
 input{
+    position: relative;
     border-color: transparent;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: aliceblue;
     font-style: arial;
     resize: horizontal;

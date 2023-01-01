@@ -1,10 +1,10 @@
 #registerbox,#registerinnerbox{
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
+    border-radius: 1.5%;
     align-content: center;
     position: relative;
-    font-style: italic;
+    min-height: fit-content;
 }
 #registerbox{
     top: 5vh;
@@ -22,17 +22,18 @@
     color: white;
     position: relative;
     left: 5%;
-    top: 8%;
+    padding-top: 5%;
 
 }
 #emailinpu,#logininpu,#nickinpu,#passwordinpu,#passwordConfirm{
     background-color: gray;
     position: relative;
-    height: 10%;
+    min-height: fit-content;
+    min-width: fit-content;
     width: 60%;
     top: 8%;
     left: 20%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 #logininpu,#nickinpu,#passwordinpu,#passwordConfirm{
     margin-top: 20px;
@@ -67,7 +68,7 @@
     height: 100%;
     width: 50%;
     border-color: transparent;
-    border-radius: 5px;
+    border-radius: 1.5%;
 }
 #registerbut:hover{
     background-color: rgba(0, 0, 0, 0.3);
@@ -76,7 +77,7 @@
 }
 input{
     border-color: transparent;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: aliceblue;
     font-style: arial;
     resize: horizontal;
