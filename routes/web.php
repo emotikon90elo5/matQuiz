@@ -19,12 +19,10 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
 
-Route::get('/register', function () {
-    return view('register');
+
+Route::get('/question', function () {
+    return view('user/question');
 });
 
 Route::get('/{id}', function ($id) {
@@ -48,6 +46,6 @@ Route::get('/questions', function () {
     ]);
 });
 
-
-// Route::get('/register', [UserControler::class,"create"]);
+Route::get('/login', [UserControler::class,"show"]);
+Route::get('/register', [UserControler::class,"create"]);
 Route::post('/users', [UserControler::class,"store"]);
