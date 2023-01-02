@@ -27,5 +27,10 @@ class UserControler extends Controller
 
         return redirect('/')->with('massage', 'Stworzono i zalogowano użytkownika.');
     }
+    public function show(){
+        return view("auth.login");
+    }
+
+
     //
 }

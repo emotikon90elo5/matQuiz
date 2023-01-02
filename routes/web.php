@@ -1,9 +1,9 @@
 <?php
 
-use App\Models\Questions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserControler;
+use App\Http\Controllers\QuizController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,33 +19,14 @@ Route::get('/', function () {
     return view('main');
 });
 
-
-
-Route::get('/question', function () {
-    return view('user/question');
-});
-
 Route::get('/{id}', function ($id) {
     return view('hi', [
         "id" => $id
     ]);
 })->where('id', '[0-9]+');
 
-
-Route::get('/emotka', function () {
-    return Questions::all().'';
-});
-
-Route::get('/emotka/{id}', function ($id) {
-    return Questions::getById($id).$id;
-})->where('id', '[0-9]+');
-
-Route::get('/questions', function () {
-    return view("question", [
-        "questions"=> Questions::all()
-    ]);
-});
-
 Route::get('/login', [UserControler::class,"show"]);
 Route::get('/register', [UserControler::class,"create"]);
 Route::post('/users', [UserControler::class,"store"]);
+//
+Route::get('/question', [QuizController::class,"show"]);
