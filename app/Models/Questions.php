@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Questions extends Model
 {
-    public static function ano($id){
+    public static function GetAnonims($id){
         $sel = self::find($id);
 
         return [
