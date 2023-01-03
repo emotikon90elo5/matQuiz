@@ -11,20 +11,25 @@
             {{$question}}
             </div>
         </div>
-        <form action="" method="POST">
-            <div class="answers">
+            <form action="" method="POST" class="form">
+                <div class="answers">
 
-                <div class="answer">
-                    <input type="button" value="{{$ans1}}">
-                </div>
-                <div class="answer">
-                    <input type="button" value="{{$ans2}}">
-                </div>
-                <div class="answer">
-                    <input type="button" value="{{$ans3}}">
-                </div>
-                <div class="answer">
-                    <input type="button" value="{{$ans4}}">
+                    <div class="answer">
+                        <input class="radio" type="radio" name="ans">
+                        <label for="r1" class="label">{{$ans1}}</label>
+                    </div>
+                    <div class="answer">
+                        <input class="radio" type="radio" name="ans">
+                        <label for="r2" class="label">{{$ans2}}</label>
+                    </div>
+                    <div class="answer">
+                        <input class="radio" type="radio" name="ans">
+                        <label for="r3" class="label">{{$ans3}}</label>
+                    </div>
+                    <div class="answer">
+                        <input class="radio" type="radio" name="ans">
+                        <label for="r4" class="label">{{$ans4}}</label>
+                    </div>
                 </div>
             </form>
     </div>
