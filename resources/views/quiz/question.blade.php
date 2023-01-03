@@ -11,7 +11,7 @@
             {{$question}}
             </div>
         </div>
-            <form action="" method="POST" class="form">
+            <form action="" method="get" class="form">
                 <div class="answers">
 
                     <div class="answer">
@@ -29,6 +29,9 @@
                     <div class="answer">
                         <input class="radio" type="radio" name="ans">
                         <label for="r4" class="label">{{$ans4}}</label>
+                    </div>
+                    <div class="commit">
+                        <input type="submit" com value="submit">
                     </div>
                 </div>
             </form>

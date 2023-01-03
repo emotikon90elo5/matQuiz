@@ -35,16 +35,18 @@
     transform: translate(0%,75%);
     white-space: initial;
 }
-.answer{
-    background-color: rgba(0, 0, 0, 0.338);
+.answer{/*pojedyńcza odpowiedź*/
+    background-color: rgba(0, 0, 0, 0.3);
     height: 15vh;
     width: 25vw;
     margin-left: 5vw;
     margin-top: 5vh;
     float: left;
+    border-radius: 10px;
+
 }
 
-.answers{
+.answers{/*pojemnik na odpowiedzi*/
     width: 65vw ;
     height: 45vh;
     position: relative;
@@ -52,12 +54,12 @@
     margin-right: auto;
     background-color: aquamarine;
 }
-input{
+input[type=radio]{/**/
     height: 100%;
     width: 100%;
     /* visibility: hidden; */
 }
-.label{
+.label{/**/
     bottom: 100%;
     position: relative;
 }
