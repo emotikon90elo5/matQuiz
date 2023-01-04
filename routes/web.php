@@ -19,14 +19,12 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('/{id}', function ($id) {
-    return view('hi', [
-        "id" => $id
-    ]);
-})->where('id', '[0-9]+');
 
-Route::get('/login', [UserControler::class,"show"]);
-Route::get('/register', [UserControler::class,"create"]);
+Route::get('/login', [UserControler::class,"show"])->name("login")->middleware("guest");
+Route::get('/register', [UserControler::class,"create"])->middleware("guest");
 Route::post('/users', [UserControler::class,"store"]);
+Route::post('/users/auth', [UserControler::class,"auth"]);
+Route::get('/logout', [UserControler::class,"logout"]);
 //
 Route::get('/question', [QuizController::class,"show"]);
+

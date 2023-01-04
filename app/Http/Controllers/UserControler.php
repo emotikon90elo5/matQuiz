@@ -14,9 +14,9 @@ class UserControler extends Controller
 
     public function store(Request $request){
         $formDate = $request->validate([
-            'name' => ["required","min:3"],
+            'name' => ["required","min:3", Rule::unique('users', 'name')],
             'email' => ["required","email", Rule::unique('users', 'email')],
-            'password' => ['required', 'min:6'],
+            'password' => ['required',"confirmed", 'min:6'],
             'type' => ["required"]
         ]);
         $formDate['password'] = bcrypt($formDate['password']);
@@ -25,12 +25,35 @@ class UserControler extends Controller
 
         auth()->login($user);
 
-        return redirect('/')->with('massage', 'Stworzono i zalogowano użytkownika.');
+        return redirect('/');
     }
     public function show(){
         return view("auth.login");
     }
 
+    public function logout(Request $request){
+        auth()->logout();
 
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect("/");
+    }
+    public function auth(Request $request){
+        $formDate = $request->validate([
+            'name' => ["required"],
+            'password' => ['required'],
+        ]);
+        if(auth()->attempt($formDate)){
+            $request->session()->regenerate();
+
+            return redirect("/");
+        }
+
+        return back()->withErrors;
+
+
+
+    }
     //
 }

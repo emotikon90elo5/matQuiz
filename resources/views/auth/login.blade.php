@@ -1,46 +1,50 @@
 @extends('layout')
-
-@section('content')
-    <link rel="stylesheet" href="{{ asset('css/auth/login.css') }}">
-
-    <div id="loginbox">
-
-        <div id="logininnerbox">
-
-            <div id="logininpu">
-                <div class="input">
-                    <input type="text" id="login" name="login" value="">
-                    <label for="login"> login </label>
-                    <div class="error">
-                        <p id="errorlogin">
-                            @error('record')
-                            @enderror
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="passwordinpu">
-                <div class="input">
-                    <input type="password" id="password" name="pasword" value="">
-                    <label for="password"> password </label>
-                    <div class="error">
-                        <p id="errorpassword">
-                            @error('record')
-                            @enderror
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="buttons">
-                <button id="loginbut">Zalogój</button>
-                <button id="registrbut">Rejestrój</button><br>
-                <button id="paswordresetbut">Rejestrój<br> hasło</button>
-            </div>
-
-        </div>
-
-    </div>
+@section('head')
+    <link rel="stylesheet" href="{{ asset('css/auth/register.css') }}">
 @endsection
+@section('content')
+    <form action="/users/auth" method="post">
+        <div class="registerbox">
+            <div class="registerinnerbox">
+                @csrf
+                <div class="card">
+                    <div class="input">
+                        <label for="name"> login </label>
+                        <input type="text" id="name" name="name" value="{{ old('name') }}">
+
+                        @error('name')
+                            <div class="error">
+                                <p class="errorMessage">
+
+                                    {{ $message }}
+
+                                </p>
+                            </div>
+                        @enderror
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="input">
+                        <label for="password"> password </label>
+                        <input type="password" id="password" name="password" value="">
+                        @error('password')
+                            <div class="error">
+                                <p class="errorMessage">
+                                    {{ $message }}
+
+                                </p>
+                            </div>
+                        @enderror
+                    </div>
+                </div>
+
+                <input class="button" type="submit" value="Zaloguj się!">
+                <div class="line"></div>
+                <a href="/register" class="anyInteraction">Nie masz  konto? Kiknij aby się zarejestrować!</a>
+            </div>
+        </div>
+    </form>
+@endsection
+
 

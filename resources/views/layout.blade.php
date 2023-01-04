@@ -61,11 +61,24 @@
         </div>
         <div>
             <div class="socialbg">
+<<<<<<< HEAD
+            <a href="https://github.com/emotikon90elo5">
+                <img class="social" src="{{asset('github.png')}}" alt="no img">
+            </a>
+            <div>
+        </div>
+        @auth
+        Siemka {{auth()->user()->name}}
+    @else
+        <a href="/login">Zaloguj się!</a>
+    @endauth
+=======
                 <a href="https://github.com/emotikon90elo5">
                     <img class="social" src="{{ asset('github.png') }}" alt="no img">
                 </a>
                 <div>
                 </div>
+>>>>>>> 9c46dc0066684abd160726702f4f2e9ff2c30a38
     </nav>
     <article>@yield('content')</article>
     <footer>footer</footer>
