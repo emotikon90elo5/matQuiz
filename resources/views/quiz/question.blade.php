@@ -14,19 +14,19 @@
                 <div class="answers">
 
                     <div class="answer">
-                        <input class="radio" type="radio" name="ans">
+                        <input class="radio" type="radio" name="ans" value="1">
                         <label for="r1" class="label">{{ $ans1 }}</label>
                     </div>
                     <div class="answer">
-                        <input class="radio" type="radio" name="ans">
+                        <input class="radio" type="radio" name="ans" value="2">
                         <label for="r2" class="label">{{ $ans2 }}</label>
                     </div><br>
                     <div class="answer">
-                        <input class="radio" type="radio" name="ans">
+                        <input class="radio" type="radio" name="ans" value="3">
                         <label for="r3" class="label">{{ $ans3 }}</label>
                     </div>
                     <div class="answer">
-                        <input class="radio" type="radio" name="ans">
+                        <input class="radio" type="radio" name="ans" value="4">
                         <label for="r4" class="label">{{ $ans4 }}</label>
                     </div>
                     <div class="commit">

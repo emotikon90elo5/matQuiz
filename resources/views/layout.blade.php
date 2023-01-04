@@ -17,7 +17,7 @@
         <div class="logo">
             <a href="/">
                 <img id="img" src="{{ asset('logo.svg') }}" alt="no img">
-            </a>+
+            </a>
         </div>
         <div class="nav">
             <div class="dropdown">

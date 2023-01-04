@@ -1,3 +1,69 @@
+@media screen and (max-width: 300px) {
+    .nav {
+        width: 18vw;
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+    }
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 12px;
+    }
+    .socialbg {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .nav {
+        width: 15vw;
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+    }
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 12px;
+    }
+    .socialbg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .nav {
+        width: 13vw;
+    }
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .nav {
+        width: 12vw;
+        margin-right: 1.5vw;
+        margin-left: 1.5vw;
+    }
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .nav {
+        width: 10vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 18px;
+    }
+}
+
 footer,
 article {
     width: 100vw;
@@ -31,17 +97,10 @@ body {
     height: 100%;
     width: 100%;
 }
-#img {
-    height: 100%;
-    width: 100%;
-}
 
 .nav {
     /*osobne kwadraty z dropdownami*/
     height: 100%;
-    width: 9vw;
-    margin-right: 1.5vw;
-    margin-left: 1.5vw;
     float: left;
     background-color: transparent;
     justify-content: center;
@@ -63,8 +122,12 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 16px;
+
     border: none;
+}
+#img{
+    height: 100%;
+    width: 100%;
 }
 
 .dropdown {
