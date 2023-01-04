@@ -1,107 +1,103 @@
-#registerbox,#registerinnerbox{
+.registerinnerbox {
     margin-left: auto;
     margin-right: auto;
-    border-radius: 1.5%;
-    position: relative;
-    min-height: fit-content;
-}
-#registerbox{
-    top: 2.5vh;
-    height: 80vh;
-    width: 35vw;
-    background-color: rgb(180, 180, 180);
-
-}
-#registerinnerbox{
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 2.5%;
-    padding: 5%;
-    height: 85%;
-    width: 85%;
-    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px, 25px;
+    height: 100%;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.17);
 }
-.input{
-
+.registerbox{
+    height: 98%;
+    padding: 0.2% 0;
+}
+.input {
     color: white;
     padding: 2.5%;
-    width: 25vw;
-
+    width: 389px;
+    min-height: 1%;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
 }
-#emailinpu,#logininpu,#nickinpu,#passwordinpu,#passwordConfirm{
+.card {
     background-color: gray;
-   min-height: fit-content;
+    min-height: 10%;
     width: 90%;
-
     left: 20%;
     border-radius: 10px;
+    margin-top: 5px;
+    padding-bottom: 10px;
 }
-#logininpu,#nickinpu,#passwordinpu,#passwordConfirm{
-    margin-top: 1vh;
-}
-.error{
+.error {
     position: relative;
     height: 20px;
-    width: 90%;
-    top: -15px;
-    color: red;
-    background-color: lightcoral;
-
+    width: 100%;
+    color: #000;
+    background-color: #fe5d6f;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
 }
-.error:hover{
-    background-color: transparent;
-    color: transparent;
-}
-#but,#registerbut{
+/* .but,
+.registerbut {
     position: relative;
-}
-#but{
-    background-color:  transparent;
-    top: 3vh;
+} */
+.button {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    background-color: rgb(21, 255, 0);
+    width: 250px;
     height: 50px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 10px;
+    border: 0;
+    box-shadow: 7px 7px 0 0 rgba(0, 0, 0, 0.261);
 }
-#registerbut{
-    left: 25%;
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 100%;
-    width: 50%;
-    border-color: transparent;
-    border-radius: 1.5%;
+.button:hover{
+    background-color: rgb(121, 118, 255);
+    border: 0;
 }
-#registerbut:hover{
-    background-color: rgba(0, 0, 0, 0.3);
-    cursor: pointer ;
-    box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.2);
+.line{
+    margin-top: 20px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(21, 255, 0);;
 }
-input{
+input,
+select {
+
     border-color: transparent;
     border-radius: 10px;
     background-color: aliceblue;
     font-style: arial;
     resize: horizontal;
-    width: 100%;
+    width: 383px;
+    padding: 1px;
+    font-size: 14px;
+    transition: 0.3s linear;
 }
-input:hover{
-    background-color: rgba(119, 136, 153, 0.25);
+input:hover,
+input:focus,
+select:hover,
+select:focus {
+    outline: 0;
     border: 2px solid black;
-    box-shadow: 4px 8px 12px 4px rgba(0,0,0,0.4);
 }
-input:focus{
-    outline: none;
-    background-color: lightslategray;
-    border: 2px solid black;
-    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.4);
-}
-label{
+label {
     display: block;
-
     text-align: center;
-
+    font-size: 20px;
     text-transform: uppercase;
-
+}
+.type {
+    text-align: center;
+}
+form{
+    height: 85vh;
+    width: 100%;
 }

@@ -64,6 +64,11 @@
             </a>
             <div>
         </div>
+        @auth
+        Siemka {{auth()->user()->name}}
+    @else
+        <a href="/login">Zaloguj się!</a>
+    @endauth
     </nav>
     <article>@yield("content")</article>
     <footer>footer</footer>
