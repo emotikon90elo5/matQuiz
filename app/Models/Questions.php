@@ -11,6 +11,7 @@ class Questions extends Model
         $sel = self::find($id);
 
         return [
+            "id"=>$id,
             "category"=> $sel["category"],
             "subCategory"=> $sel["subCategory"],
             "question"=> $sel["question"],

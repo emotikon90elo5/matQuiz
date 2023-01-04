@@ -11,6 +11,7 @@ class QuizController extends Controller
 
         $quest=Questions::GetAnonims(rand(1,1001));
         return view("quiz.question",[
+            "id"=>$quest["id"],
             "question"=>$quest["question"],
             "ans1"=> $quest["answer1"],
             "ans2"=> $quest["answer2"],
