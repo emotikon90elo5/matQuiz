@@ -1,6 +1,7 @@
 @extends('layout')
 @section('head')
     <link rel="stylesheet" href="{{ asset('css/quiz/quiz.css') }}">
+    <title>pytanie</title>
 @endsection
 @section('content')
     <div class="bigBox">
@@ -29,10 +30,7 @@
                         <input class="radio" type="radio" name="ans" value="4">
                         <label for="r4" class="label">{{ $ans4 }}</label>
                     </div>
-                    <div class="commit">
-                        <input type="submit" class="submit" value="submit">
-
-                    </div>
+                    <input type="submit" class="submit" value="submit">
                 </div>
                 <input type="hidden" name="id" value="{{ $id }}">
             </form>

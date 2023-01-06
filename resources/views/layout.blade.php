@@ -61,7 +61,6 @@
                 </div>
             </div>
         </span>
-
     </nav>
     <article>@yield('content')</article>
     <footer>

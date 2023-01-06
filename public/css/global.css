@@ -14,7 +14,7 @@
     .dropdown,
     .dropdown-content,
     .dropbtn {
-        font-size: 15px;
+        font-size: 13px;
     }
     .logo {
         display: none;
@@ -37,12 +37,20 @@
         font-size: 19px;
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1600px) and (min-width: 1200px)  {
     .ussername,
     .dropdown,
     .dropdown-content,
     .dropbtn {
         font-size: 24px;
+    }
+}
+@media screen and (max-width: 4000px) and (min-width: 1600px)  {
+    .ussername,
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 40px;
     }
 }
 @media screen and (max-width: 600px) {
@@ -166,7 +174,6 @@ body {
 }
 .socialbg {
     /*tło sociali*/
-
     margin-right: auto;
     margin-right: auto;
     height: 5vh;
