@@ -18,6 +18,9 @@ use App\Http\Controllers\QuizController;
 Route::get('/', function () {
     return view('main');
 });
+Route::get('/teacher', function () {
+    return view('teacher/acountmenager');
+});
 
 
 Route::get('/login', [UserControler::class,"show"])->name("login")->middleware("guest");
@@ -27,4 +30,7 @@ Route::post('/users/auth', [UserControler::class,"auth"]);
 Route::get('/logout', [UserControler::class,"logout"]);
 //
 Route::get('/question', [QuizController::class,"show"]);
+//
+Route::get('/question', [QuizController::class,"show"]);
+
 

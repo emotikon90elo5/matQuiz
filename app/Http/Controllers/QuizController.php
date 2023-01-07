@@ -18,8 +18,5 @@ class QuizController extends Controller
             "ans3"=> $quest["answer3"],
             "ans4"=> $quest["answer4"],
         ]);
-
     }
-
-    //
 }
