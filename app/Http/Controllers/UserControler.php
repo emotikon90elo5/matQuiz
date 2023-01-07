@@ -50,7 +50,7 @@ class UserControler extends Controller
             return redirect("/");
         }
 
-        return back()->withErrors;
+        return back()->withErrors(["password"=>"Podałeś zły login albo hasło!"]);
 
 
 
