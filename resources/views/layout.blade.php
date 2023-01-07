@@ -64,21 +64,6 @@
     </nav>
     <article>@yield('content')</article>
     <footer>
-        <div class="cards">
-            <div class="socialbg">
-            <a href="https://github.com/emotikon90elo5">
-                <img class="social" src="{{asset('github.png')}}" alt="no img">
-            </a>
-            <div>
-        </div>
-        @auth
-        Siemka {{auth()->user()->name}}
-    @else
-        <a href="/login">Zaloguj się!</a>
-    @endauth
-    </nav>
-    <article>@yield('content')</article>
-    <footer>footer</footer>
                 <a href="https://github.com/emotikon90elo5">
                     <img class="social" src="{{ asset('github.png') }}" alt="no img">
                 </a>
