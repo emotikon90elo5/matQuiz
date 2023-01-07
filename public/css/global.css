@@ -1,3 +1,72 @@
+@media screen and (max-width: 300px) {
+    .ussername,
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 12px;
+    }
+    .logo {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .ussername,
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 13px;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .ussername,
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .ussername,
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1200px)  {
+    .ussername,
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 4000px) and (min-width: 1600px)  {
+    .ussername,
+    .dropdown,
+    .dropdown-content,
+    .dropbtn {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav {
+        width: 23vw;
+    }
+}
+@media screen and (min-width: 600px) {
+    .nav {
+        width: 20vw;
+    }
+}
+.top {
+    gap: 5vw;
+    display: flex;
+}
 footer,
 article {
     width: 100vw;
@@ -10,9 +79,7 @@ nav {
     /*środkowy pasek u góry*/
     background-color: lightgray;
     height: 10vh;
-    width: 90vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    width: 100vw;
 }
 footer {
     /*stopka*/
@@ -22,7 +89,6 @@ footer {
 }
 article {
     /*środek*/
-    color: aqua;
     min-height: 85vh;
 }
 body {
@@ -31,29 +97,17 @@ body {
     height: 100%;
     width: 100%;
 }
-#img {
-    height: 100%;
-    width: 100%;
-}
-
 .nav {
     /*osobne kwadraty z dropdownami*/
-    height: 100%;
-    width: 9vw;
-    margin-right: 1.5vw;
-    margin-left: 1.5vw;
     float: left;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     display: flex;
 }
 .logo {
     /* wartości związane z logo */
-    height: 90%;
-    width: 15vw;
-    margin-right: 1.5vw;
-    margin-left: 1.5vw;
+    margin-left: 5vh;
+    height: 100%;
+    width: 10vh;
     float: left;
     background-color: transparent;
 }
@@ -63,8 +117,10 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 16px;
     border: none;
+}
+.img {
+    height: 10vh;
 }
 
 .dropdown {
@@ -114,12 +170,38 @@ body {
     /*po najechaniu nna githuba i inne*/
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.15s all linear;
 }
 .socialbg {
     /*tło sociali*/
-    position: relative;
-    height: 10vh;
+    margin-right: auto;
+    margin-right: auto;
+    height: 5vh;
     float: right;
     align-content: center;
     border-radius: 50%;
+}
+.cards {
+    align-items: stretch;
+}
+.top {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.logout {
+    margin-right: auto;
+    margin-right: auto;
+    height: 5vh;
+    float: left;
+    align-content: center;
+}
+.ussername {
+    float: right;
+}
+
+.logout:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.15s all linear;
 }

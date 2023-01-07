@@ -14,52 +14,57 @@
 
 <body>
     <nav>
-        <div class="logo">
-            <a href="/">
-                <img id="img" src="{{ asset('logo.svg') }}" alt="no img">
-            </a>+
-        </div>
-        <div class="nav">
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+        <span class="top">
+            <div class="logo">
+                <a href="/">
+                    <img class="img" src="{{ asset('logo.svg') }}" alt="no img">
+                </a>
+            </div>
+            <div class="nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="nav">
-            <div class="dropdown">
-                <button class="dropbtn">sites</button>
-                <div class="dropdown-content">
-                    <a href="#">about us</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+            <div class="nav">
+                <div class="dropdown">
+                    <button class="dropbtn">sites</button>
+                    <div class="dropdown-content">
+                        <a href="#">about us</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="nav">
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+            <div class="nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="nav">
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+            <div class="nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
+        </span>
+    </nav>
+    <article>@yield('content')</article>
+    <footer>
+        <div class="cards">
             <div class="socialbg">
             <a href="https://github.com/emotikon90elo5">
                 <img class="social" src="{{asset('github.png')}}" alt="no img">
@@ -74,6 +79,28 @@
     </nav>
     <article>@yield('content')</article>
     <footer>footer</footer>
+                <a href="https://github.com/emotikon90elo5">
+                    <img class="social" src="{{ asset('github.png') }}" alt="no img">
+                </a>
+            </div>
+            <div>
+                @auth
+                    <span class="ussername"> Siemka {{ auth()->user()->name }}</span>
+                @else
+                <div class="socialbg">
+                    <a href="/login"><img class="social" src="{{ asset('login.png') }}" alt="no img"></a>
+                </div>
+                @endauth
+
+            </div>
+            <div class="logout">
+                @auth
+                <a href="/logout"><img class="social" src="{{ asset('logout.png') }}" alt="no img"></a>
+                @endauth
+
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
