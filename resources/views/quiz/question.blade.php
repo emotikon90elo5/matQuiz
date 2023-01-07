@@ -11,7 +11,8 @@
                     {{ $question }}
                 </div>
             </div>
-            <form action="" method="get" class="form">
+            <form action="/question/check" method="post" class="form">
+                @csrf
                 <div class="answers">
 
                     <div class="answer">
@@ -33,7 +34,33 @@
                     <input type="submit" class="submit" value="submit">
                 </div>
                 <input type="hidden" name="id" value="{{ $id }}">
+
+
+
             </form>
+            @error('message')
+                    <div class="popup">
+                        <button id="close">&times;</button>
+                        <p>
+                            {{ $message }}
+                        </p>
+                    </div>
+                                  <!--Script-->
+                <script type="text/javascript">
+                    window.addEventListener("load", function() {
+                        document.querySelector(".popup").style.display = "block";
+                        let val = document.querySelector(".popup p").textContent;
+                        val.replaceAll("<code>", "<div class='code'>");
+        val.replaceAll("</code>", "</div>");
+                        document.querySelector(".popup p").innerHTML = val;
+                    });
+
+
+                    document.querySelector("#close").addEventListener("click", function() {
+                        document.querySelector(".popup").style.display = "none";
+                    });
+                </script>
+                @enderror
         </div>
     </div>
 @endsection

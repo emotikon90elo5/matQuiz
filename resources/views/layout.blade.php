@@ -64,6 +64,7 @@
     </nav>
     <article>@yield('content')</article>
     <footer>
+        <div class="socialbg">
                 <a href="https://github.com/emotikon90elo5">
                     <img class="social" src="{{ asset('github.png') }}" alt="no img">
                 </a>

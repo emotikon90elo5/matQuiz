@@ -27,4 +27,5 @@ Route::post('/users/auth', [UserControler::class,"auth"]);
 Route::get('/logout', [UserControler::class,"logout"]);
 //
 Route::get('/question', [QuizController::class,"show"]);
+Route::post('/question/check', [QuizController::class,"check"]);
 
