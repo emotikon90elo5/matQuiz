@@ -30,7 +30,11 @@ Route::post('/users/auth', [UserControler::class,"auth"]);
 Route::get('/logout', [UserControler::class,"logout"]);
 //
 Route::get('/question', [QuizController::class,"show"]);
+<<<<<<< HEAD
 //
 Route::get('/question', [QuizController::class,"show"]);
 
+=======
+Route::post('/question/check', [QuizController::class,"check"]);
+>>>>>>> 66302f791a036c367c35fe7aa965cce06c9c2766
 
